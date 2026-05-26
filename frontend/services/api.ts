@@ -4,7 +4,7 @@ export async function analyzeFrame(blob: Blob) {
     formData.append('file', blob, 'frame.jpg')
 
     const response = await fetch(
-        'http://127.0.0.1:8000/analyze',
+        'https://unmanufacturable-jodie-uncarted.ngrok-free.dev',
         {
             method: 'POST',
             body: formData,
